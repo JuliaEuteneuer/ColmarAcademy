@@ -1,3 +1,167 @@
-* {
+/* ____GENERAL STYLES______*/
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+/*___ SPECIFIC STYLES______*/
+
+
+/*HEADER SECTION*/
+.nav-bar {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+.fake-logo {
+    color: darkgray;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: darkslategray
+}
+
+/* HERO SECTION ("banner")*/
+.hero {
+    background-color: lightslategray;
+    display: inline-flex;
+    width: 100%;
+    padding: 32px 24px; /*shorthand two values: top and bottom || left and right*/
+}
+.banner-picture {
+max-width: 900px;
+max-height: 650px;/*NUR PROVISORISCH!! */
+}
+.banner-text {
+    padding-left: 24px;
+    padding-right: 88px;
+    align-content: center;
+}
+
+.hero button {
+    width: 380px;
+    padding: 12px;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(51, 58, 58);
+    color: #fff;
+    border: none;
+    
+}
+
+
+/* INTRO SECTION*/
+
+.intro {
+    display: flex;
+    padding-left: 24px;
+    padding-top: 32px;
+}
+.intro-main {
+    width: 60%;
+    padding-right: 24px;
+    padding-bottom: 32px;
+}
+.intro-main-img {
+    max-width: 900px; /*nur provisorisch, bessere Lösung finden!*/
+}
+
+.intro-main-text {
+    padding-right: 48px;
+
+}
+.small {
+    font-size: 12px;
+    text-align: right;
+}
+
+.side-info {
+    width: 40%;
+    
+}
+.side-info-card {
+    display: flex;
+    padding-left: 16px; /*find a solution for top box (no double margin)*/
+    gap: 2rem;
+    width:max-content;
+
+}
+.guest-lecture {
+    background-color: darkslategray;
+}
+/*LEARNING SECTION (courses)*/
+.learning {
+    background-color: lightgray;
+    padding: 32px 72px;
+}
+
+.learning h2 {
+    text-align: center;
+    margin-bottom:;
+}
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-card {
+    background-color: #fff;
+    margin: 10px;
+}
+
+/*THESIS SECTION*/
+
+.thesis-section {
+
+    background-color: blanchedalmond;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.thesis-section h2 {
+    text-align: center;
+
+}
+.thesis {
+  
+    display: flex;
+}
+
+
+/* FOOTER SECTION*/
+footer {
+    display: inline-flex;
+    padding: 16px 24px; /*top/bottom || left/right*/
+    align-items: center;
+    color: rgb(92, 88, 88);
+}
+
+/* nav is now the same class as in header*/
