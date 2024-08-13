@@ -18,6 +18,10 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-size: 18px;
+}
+
 p {
     line-height: 1.5;
 }
@@ -53,12 +57,11 @@ p {
 .hero {
     background-color: lightslategray;
     display: inline-flex;
-    width: 100%;
     padding: 32px 24px; /*shorthand two values: top and bottom || left and right*/
 }
 .banner-picture {
-max-width: 900px;
-max-height: 650px;/*NUR PROVISORISCH!! */
+    max-width: 900px;
+    max-height: 650px;/*NUR PROVISORISCH!! */
 }
 .banner-text {
     padding-left: 24px;
@@ -101,27 +104,30 @@ max-height: 650px;/*NUR PROVISORISCH!! */
 }
 .small {
     font-size: 12px;
-    text-align: right;
+    margin-top: 24px;
 }
 
-.side-info {
-    width: 40%;
+/*.side-info {
+    
+}*/
+.side-info-card {
+    display: inline-flex;
+    padding: 0 0 16px 16px ; /*find a solution for top box (no double margin)*/
+    gap: 16px;
+    
     
 }
-.side-info-card {
-    display: flex;
-    padding-left: 16px; /*find a solution for top box (no double margin)*/
-    gap: 2rem;
-    width:max-content;
+
+.side-info-img {
+    max-height: 200px
 
 }
-.guest-lecture {
-    background-color: darkslategray;
-}
+
 /*LEARNING SECTION (courses)*/
 .learning {
     background-color: lightgray;
     padding: 32px 72px;
+    
 }
 
 .learning h2 {
@@ -131,10 +137,19 @@ max-height: 650px;/*NUR PROVISORISCH!! */
 .course-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 32px;
 }
 .course-card {
     background-color: #fff;
-    margin: 10px;
+    max-width: 400px;
+}
+
+.course-img {
+    max-width: 400px;
+}
+
+.course-text {
+    padding: 16px 24px 24px 16px; /*top right bottom left*/
 }
 
 /*THESIS SECTION*/
@@ -142,8 +157,7 @@ max-height: 650px;/*NUR PROVISORISCH!! */
 .thesis-section {
 
     background-color: blanchedalmond;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px 32px 24px; /*top right bottom left*/
 }
 
 .thesis-section h2 {
@@ -151,7 +165,7 @@ max-height: 650px;/*NUR PROVISORISCH!! */
 
 }
 .thesis {
-  
+  margin-top: 32px;
     display: flex;
 }
 
